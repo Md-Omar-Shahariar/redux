@@ -48,3 +48,4 @@ store.subscribe(() => {
 
 store.dispatch(getProducts());
 store.dispatch(addProducts("Pan"));
+store.dispatch(addProducts("egg"));
