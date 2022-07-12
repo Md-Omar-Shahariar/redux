@@ -79,10 +79,11 @@ const fetchData = () => {
       .then((res) => {
         const todos = res.data;
         const titles = todos.map((todo) => todo.title);
-        console.log(titles);
+        dispatch(getTodosSuccess(titles));
       })
       .catch((error) => {
-        console.log(error.message);
+        const errorMessage = error.message;
+        dispatch(getTodosFail(errorMessage));
       });
   };
 };
