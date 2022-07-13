@@ -8,7 +8,6 @@ const { createStore, applyMiddleware } = require("redux");
 const thunk = require("redux-thunk").default;
 
 //axios api
-
 const GET_TODOS_REQUEST = "GET_TODOS_REQUEST";
 const GET_TODOS_SUCCESS = "GET_TODOS_SUCCESS";
 const GET_TODOS_FAIL = "GET_TODOS_FAIL";
